@@ -1,0 +1,16 @@
+[
+    {
+        "[global]client-facotry": "GoogleDrive",
+        "[global]mounting-point": "J",
+        "[global]name": "Drive name",
+        "[global]caching": "true",
+        "[global]enabled": "true"
+    },
+    {
+        "[global]client-facotry": "DropBox",
+        "[global]mounting-point": "Q",
+        "[global]name": "Another drive",
+        "[global]caching": "false",
+        "[global]enabled": "false"
+    }
+]

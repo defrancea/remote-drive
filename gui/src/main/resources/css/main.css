@@ -1,0 +1,55 @@
+/*
+ * Copyright (c) 2014, Alain Defrance. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301  USA
+ */
+
+.button, .toggle-button {
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-border-radius: 5;
+}
+
+.headerButton {
+    -fx-text-fill: #DDDDDD;
+    -fx-background-color: #114477;
+}
+
+.headerButton:hover {
+    -fx-background-color: #0E3257;
+}
+
+#headerPane {
+    -fx-background-color: #336699;
+    -fx-padding: 10, 10, 10, 10;
+}
+
+#headerButtonPane {
+    -fx-spacing: 10;
+}
+
+#headerLabel {
+    -fx-text-fill: #DDDDDD;
+    -fx-font-weight: bold;
+    -fx-font-size: 16;
+}
+
+#configurationListView {
+    -fx-background-color: #DDDDDD;
+}

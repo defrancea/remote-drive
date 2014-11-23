@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<BorderPane
+        fx:controller="remotedrive.gui.controller.ConfigureController"
+        xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@/css/drive-item.css" />
+    </stylesheets>
+
+    <center>
+        <VBox>
+            <ComboBox fx:id="clientTypeCombo">
+                <items>
+                    <FXCollections fx:id="availableClientType" fx:factory="observableArrayList"/>
+                </items>
+            </ComboBox>
+            <ComboBox fx:id="mountingPointCombo">
+                <items>
+                    <FXCollections fx:id="availableMountingPoint" fx:factory="observableArrayList"/>
+                </items>
+            </ComboBox>
+            <TextField fx:id="driveLabelField"/>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox>
+            <Button text="Create" onAction="#onSave"/>
+            <Button text="Cancel" onAction="#onCancel"/>
+        </HBox>
+    </bottom>
+</BorderPane>

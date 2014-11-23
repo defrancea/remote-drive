@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+<BorderPane
+        fx:controller="remotedrive.gui.controller.MainController"
+        xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@/css/main.css" />
+    </stylesheets>
+
+    <top>
+        <BorderPane fx:id="headerPane">
+            <left>
+                <Label fx:id="headerLabel" text="%header.text"/>
+            </left>
+            <center>
+                <HBox fx:id="headerButtonPane" alignment="CENTER_RIGHT">
+                    <Button styleClass="headerButton" text="%header.create" onAction="#onCreateDrive"/>
+                    <Button styleClass="headerButton" text="%header.delete" onAction="#onDeleteDrive"/>
+                </HBox>
+            </center>
+        </BorderPane>
+    </top>
+
+    <center>
+        <ListView fx:id="configurationListView">
+            <items>
+                <FXCollections fx:id="configurations" fx:factory="observableArrayList"/>
+            </items>
+        </ListView>
+    </center>
+
+</BorderPane>

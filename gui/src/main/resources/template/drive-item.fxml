@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+<BorderPane
+        fx:controller="remotedrive.gui.controller.DriveItemController"
+        xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@/css/drive-item.css" />
+    </stylesheets>
+
+    <left>
+        <ImageView fx:id="configurationIcon"/>
+    </left>
+    <center>
+        <HBox alignment="CENTER_LEFT">
+            <Label fx:id="configurationNameLabel"/>
+            <Label fx:id="configurationMountingPointLabel"/>
+        </HBox>
+    </center>
+    <right>
+        <HBox fx:id="headerButtonPane" alignment="CENTER_RIGHT">
+            <ToggleButton fx:id="connectToggleButton" onAction="#onToggle"/>
+            <Button fx:id="configureButton" onAction="#onConfigure"/>
+        </HBox>
+    </right>
+</BorderPane>
