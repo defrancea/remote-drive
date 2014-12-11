@@ -94,7 +94,7 @@
             </build>
         </profile>
         <profile>
-            <id>window-dependency</id>
+            <id>windows-dependencies</id>
             <dependencies>
                 <dependency>
                     <groupId>remote-drive</groupId>
