@@ -9,8 +9,8 @@
         <groupId>remote-drive</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>remote-drive.filesystem-dokan</artifactId>
-    <name>Remote Drive - FileSystem - Dokan (Windows)</name>
+    <artifactId>remote-drive.filesystem-windows</artifactId>
+    <name>Remote Drive - FileSystem - Windows</name>
 
     <dependencies>
         <dependency>

@@ -43,9 +43,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Defines Dokan file system handler.
+ * Defines Windows file system handler.
  */
-public class DokanFileSystemHandler implements FileSystemHandler
+public class WindowsFileSystemHandler implements FileSystemHandler
 {
     /**
      * {@inheritDoc}

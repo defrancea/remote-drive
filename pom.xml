@@ -43,7 +43,7 @@
         <module>gui</module>
         <module>core</module>
         <module>packaging</module>
-        <module>filesystem-dokan</module>
+        <module>filesystem-windows</module>
     </modules>
 
     <dependencyManagement>
@@ -56,7 +56,7 @@
             </dependency>
             <dependency>
                 <groupId>remote-drive</groupId>
-                <artifactId>remote-drive.filesystem-dokan</artifactId>
+                <artifactId>remote-drive.filesystem-windows</artifactId>
                 <version>${version}</version>
             </dependency>
             <dependency>
