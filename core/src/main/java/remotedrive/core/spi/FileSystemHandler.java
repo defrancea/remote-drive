@@ -29,6 +29,14 @@ import remotedrive.core.Configuration;
 public interface FileSystemHandler
 {
     /**
+     * Return all possible available mounting points.
+     * This is a typical usage of windows where the possible mounting points are limited letters.
+     * When the system doesn't have any specific requirement for mounting point, just return null;
+     * @return all possible mounting points as string.
+     */
+    String[] getAvailableMountingPoints();
+
+    /**
      * Mounts a drive from a given client
      * @param client The client.
      * @param configuration The configuration.

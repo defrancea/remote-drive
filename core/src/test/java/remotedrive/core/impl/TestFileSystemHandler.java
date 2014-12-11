@@ -29,6 +29,12 @@ import remotedrive.core.spi.FileSystemHandler;
 public class TestFileSystemHandler implements FileSystemHandler
 {
     @Override
+    public String[] getAvailableMountingPoints()
+    {
+        return null;
+    }
+
+    @Override
     public void mount(Client client, Configuration configuration)
     {
     }

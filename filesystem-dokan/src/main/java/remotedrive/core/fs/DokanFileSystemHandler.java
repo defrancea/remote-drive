@@ -37,13 +37,38 @@ import remotedrive.core.spi.FileSystemHandler;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Defines Dokan file system handler.
  */
 public class DokanFileSystemHandler implements FileSystemHandler
 {
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String[] getAvailableMountingPoints()
+    {
+        // Browse from A to Z
+        List<String> availableLetters = new ArrayList<String>();
+        for(char c = 'A'; c <= 'Z'; ++c)
+        {
+            // If the file exist, skip it
+            String currentRoot = String.valueOf(c);
+            if(!Paths.get(currentRoot + ":\\").toFile().exists())
+            {
+                availableLetters.add(String.valueOf(c));
+            }
+        }
+
+        // Return as an array
+        return availableLetters.toArray(new String[availableLetters.size()]);
+    }
+
     /**
      * {@inheritDoc}
      */

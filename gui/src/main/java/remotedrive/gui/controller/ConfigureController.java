@@ -109,11 +109,10 @@ public class ConfigureController extends AbstractController implements Initializ
     public void initialize(URL location, ResourceBundle resources)
     {
         // Add some sample letter
-        // TODO: Determine them from the available ones
-        availableMountingPoint.add("A");
-        availableMountingPoint.add("B");
-        availableMountingPoint.add("C");
-        availableMountingPoint.add("D");
+        for(String possibleMountingPoint : remoteDriveBootstrap.getFileSystemHandler().getAvailableMountingPoints())
+        {
+            availableMountingPoint.add(possibleMountingPoint);
+        }
 
         // Initialize available providers
         availableClientType.addAll(remoteDriveBootstrap.availableClientFactories());
