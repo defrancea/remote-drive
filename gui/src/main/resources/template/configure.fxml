@@ -28,6 +28,7 @@
                 </items>
             </ComboBox>
             <TextField fx:id="driveLabelField"/>
+            <TextField fx:id="usernameField"/>
         </VBox>
     </center>
     <bottom>

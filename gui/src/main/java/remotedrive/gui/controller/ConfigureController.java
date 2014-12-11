@@ -59,6 +59,12 @@ public class ConfigureController extends AbstractController implements Initializ
     private TextField driveLabelField;
 
     /**
+     * The username text field.
+     */
+    @FXML
+    private TextField usernameField;
+
+    /**
      * The mounting point combo.
      * TODO: Currently a combo because windows manages mounting point with letters.
      *       For linux implementation it will have to be a free text or automatically pick up a location.
@@ -135,6 +141,7 @@ public class ConfigureController extends AbstractController implements Initializ
         configuration.writeString("factory-name", (String) clientTypeCombo.getSelectionModel().getSelectedItem());
         configuration.writeBoolean("caching", false);
         configuration.writeBoolean("enabled", false);
+        configuration.writeString("username", usernameField.getText());
 
         // Close the window
         stage.close();
